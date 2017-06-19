@@ -61,7 +61,7 @@ footer .redes {
 	align-items: center;
 }
 footer .redes a {
-	padding: 40px;
+	padding: 30px;
 	text-decoration: none;
 }
 footer .redes a span {
@@ -181,11 +181,6 @@ footer .principio .logo
 {
 	font-size: 1.4em;
 }
-.nav.navbar-nav .dropdown-menu.login
-{
-	padding: 20px;
-	box-shadow: inset 2px 2px 3px 0 #000000;
-}
 
 .nav.navbar-nav .dropdown-menu.login .login-form
 {
@@ -196,6 +191,9 @@ footer .principio .logo
 {
 	overflow:visible;
 	transition: .3s linear all; 
+	padding: 20px;
+	background-color: #fafafa;
+	box-shadow: 2px 2px 3px #222;
 }
 .nav.navbar-nav .dropdown-menu.login .login-form input
 {
@@ -320,14 +318,25 @@ section.imagenes
 {
 	background: #fafafa;
 	display:flex;
+	flex-direction: column;
 	align-content: center;
 	justify-content: center;
+	padding: 0 10px;
+}
+section.imagenes #imagenes {
+	width: 50vw;
+	margin-bottom: 20px;
+}
+section.imagenes p.cita {
+	font-size: 1.2em;
+	text-align: center;
 }
 section.imagenes .carousel-inner .item {
-	height: 80vh;
+	height: 60vh;
+	width: 100%;
 }
 section.imagenes .carousel-inner .item img {
-	width: 100vw;
+	width: 100%;
 	height: 100%;
 }
 
@@ -560,6 +569,12 @@ section.horarios #img3
 		background: white;
 
 	}
+
+
+	section.principal .banner h1 {
+		text-align: center;
+	}
+
 	section.noticias .noticia img
 	{
 		height: 200px;
@@ -608,6 +623,9 @@ footer .redes a span {
 		padding: 20px 0;
 	}
 
+	section.imagenes #imagenes {
+		width: 80vw;
+	}
 	section.imagenes .carousel-inner .item {
 		max-height: 40vh;
 	}

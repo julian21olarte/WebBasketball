@@ -83,51 +83,45 @@
 		
 		<section class="imagenes">
 
-			<div class="container">
+			<div  id="imagenes" class="carousel slide" data-ride="carousel"> 
+				<ol class="carousel-indicators">
+						<li data-target="#imagenes" data-slide-to="0" class="active"></li>
+						<li data-target="#imagenes" data-slide-to="1"></li>
+						<li data-target="#imagenes" data-slide-to="2"></li>
+						<li data-target="#imagenes" data-slide-to="3"></li>
+				</ol>
 
-				<div class="row">
-					<div class="col-xs-12 col-md-10 col-md-offset-1">
-						<div  id="imagenes" class="carousel slide" data-ride="carousel"> 
-							<ol class="carousel-indicators">
-									<li data-target="#imagenes" data-slide-to="0" class="active"></li>
-									<li data-target="#imagenes" data-slide-to="1"></li>
-									<li data-target="#imagenes" data-slide-to="2"></li>
-									<li data-target="#imagenes" data-slide-to="3"></li>
-							</ol>
-
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-									<div class="item active">
-										<img src="/images/img1.png" alt="">
-									</div>
-
-									<div class="item">
-										<img src="/images/img2.png" alt="">
-									</div>
-
-									<div class="item">
-										<img src="/images/img8.jpg" alt="">
-									</div>
-
-									<div class="item">
-										<img src="/images/img9.jpg" alt="">
-									</div>
-							</div>
-
-							<!-- Left and right controls -->
-							<a class="left carousel-control" href="#imagenes" role="button" data-slide="prev">
-								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								<span class="sr-only">Anterior</span>
-							</a>
-							<a class="right carousel-control" href="#imagenes" role="button" data-slide="next">
-								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-								<span class="sr-only">Siguiente</span>
-							</a>
-							
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+						<div class="item active">
+							<img src="/images/img1.png" alt="">
 						</div>
-					</div>
+
+						<div class="item">
+							<img src="/images/img2.png" alt="">
+						</div>
+
+						<div class="item">
+							<img src="/images/img8.jpg" alt="">
+						</div>
+
+						<div class="item">
+							<img src="/images/img9.jpg" alt="">
+						</div>
 				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#imagenes" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a class="right carousel-control" href="#imagenes" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
+				
 			</div>
+			<p class="cita"><i>"La fuerza del equipo esta en cada miembro individual. La fuerza de cada miembro esta en el equipo."</i> - Phil Jackson.</p>
 		</section>
 
 
