@@ -1,0 +1,67 @@
+body
+{
+	background: none;
+	background-color: #313131;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar.navbar-default ul li a
+{
+	color:white;
+	font-size: 1.2em;
+	min-width: 120px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.navbar.navbar-default .navbar-header #navbar-button span
+{
+	font-size: 1.4em;
+}
+
+.contacto
+{
+	box-shadow: none;
+	color: white;
+	padding-bottom: 20px;
+}
+.contacto h2
+{
+	font-size: 1.5em;
+}
+.contacto .mapa
+{
+	outline:3px solid #765A11;
+	margin-bottom: 20px;
+}
+.contacto span
+{
+	font-size: 1.5em;
+	color: #A6720C;
+}
+.contacto ul
+{
+	list-style: none;
+	padding-left: 20px;
+}
+.contacto ul li
+{
+	margin-bottom: 20px;
+}
+
+
+
+/*********formulario email****************/
+.contacto form input, .contacto form textarea
+{
+	margin-bottom: 10px;
+	resize: none;
+}
+.contacto form input[type="submit"]
+{
+	background:#8D0000;
+	color: white;
+	border:none;
+}
+.contacto form label
+{
+	font-size: 1.2em;
+}

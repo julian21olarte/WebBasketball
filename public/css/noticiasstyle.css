@@ -1,0 +1,52 @@
+body
+{
+	background: #444;
+}
+.noticias h2
+{
+	margin-bottom: 25px;
+	margin-top: 50px;
+}
+
+.noticias .noticia .imagen
+{
+	outline:3px solid #765A11;
+	margin: 20px 0;
+
+}
+.noticias .noticia
+{
+	border-bottom: 1px solid #ddd;
+	padding: 40px 0;
+	cursor: pointer;
+
+}
+.noticias .noticia:nth-child(odd) .col-md-3
+{
+	float: right;
+
+}
+.noticias .noticia:hover .imagen img
+{
+	transform: scale(.9);
+	filter:brightness(1.4);
+}
+.noticias .noticia p
+{
+	font-size: 1em;
+}
+.noticias .noticia 
+{
+	color: #111;
+}
+.noticias .ver-mas
+{
+	cursor: pointer;
+	margin: 20px;
+	text-align: center;
+	color: #111;
+}
+.noticias .ver-mas:hover
+{
+	color:#D66811;
+}

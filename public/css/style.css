@@ -1,0 +1,616 @@
+body
+{
+	padding-top: 50px;
+	background: #111;
+	background: url(/images/fondo1.jpg) no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+section
+{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 15vh 0;
+}
+
+section h2
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #369;
+	font-size: 2.5em;
+	font-weight: bold;
+	border-bottom: 1px solid lightgray;
+	padding-bottom: 10px;
+	margin-bottom: 40px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/***************    FOOTER   ******************/
+footer
+{
+
+	background: #222;
+	color: #BAD9BD;	
+	position: bottom;
+	min-height: 400px;
+	padding: 40px 0;
+}
+footer h2
+{
+	color: white;
+	padding: 15px 10px;
+	text-align: center;
+	margin-bottom: 20vh;
+	font-weight: lighter;
+}
+footer ul
+{
+	list-style: none;
+}
+
+/*******footer redes*******/
+footer .redes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+footer .redes a {
+	padding: 40px;
+	text-decoration: none;
+}
+footer .redes a span {
+	color: white;
+	font-size: 3em;
+}
+footer .fb, footer .yt, footer .tw
+{
+	transition: all .4s;
+}
+
+footer .fb:hover
+{
+	background: #3e5b98;
+}
+
+
+footer .tw:hover
+{
+	background: #4da7de;
+}
+
+footer .yt:hover
+{
+	background:#e02a20;
+}
+
+/******footer direcciones*****/
+
+footer .direcciones ul li p
+{
+	color: #C8C8C8;
+}
+footer .direcciones ul li span, footer .redes ul li span
+{
+	color: white;
+	margin-top: 5px;
+}
+footer .principio .logo
+{
+	width: 70%;
+	height: 150px;
+	margin:0 auto;
+	margin-top: 10px;
+	background: url(/images/logo5.jpg)no-repeat center center;
+	background-size: cover;
+	box-shadow: 10px 10px 10px #111;
+}
+
+
+
+/************************navbar******************/
+.navbar.navbar-default
+{
+	background: #C30000;
+	border:none;
+	z-index: 5;
+	transition: .5 linear all;
+}
+.nav.navbar-nav li a{
+	height: 100%;
+}
+
+
+.navbar-header #navbar-button,
+ .navbar-header #navbar-button:hover,
+  #navbar-header #navbar-button:active,
+  .navbar-header #navbar-button:focus
+{
+	background: none;
+	border:none;
+	color:white;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+ .navbar .nav li.dropdown.active > .dropdown-toggle,
+  .navbar .nav li.dropdown.open.active > .dropdown-toggle 
+{
+	background: none;
+	color: white;
+	background: #760000;
+}
+.navbar.navbar-default ul
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.nav.navbar-nav li a, .nav.navbar-nav.navbar-right li a span{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	transition: .2s linear all;
+}
+.navbar.navbar-default ul li a
+{
+	color:white;
+	font-size: 1.2em;
+	min-width: 120px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.navbar.navbar-default ul li a:hover,
+.navbar.navbar-default ul li a:focus
+{
+	color: white;
+	background: #760000;
+}
+.navbar.navbar-default ul li a span
+{
+	font-size: 1em;
+}
+.navbar.navbar-default .navbar-brand
+{
+	color: #EFEFEF;
+	font-weight: bold;
+	font-size: 2em;
+}
+.navbar.navbar-default .navbar-header #navbar-button span
+{
+	font-size: 1.4em;
+}
+.nav.navbar-nav .dropdown-menu.login
+{
+	padding: 20px;
+	box-shadow: inset 2px 2px 3px 0 #000000;
+}
+
+.nav.navbar-nav .dropdown-menu.login .login-form
+{
+	min-width: 250px;
+	min-height: 100px;
+}
+.nav.navbar-nav .dropdown-menu.login
+{
+	overflow:visible;
+	transition: .3s linear all; 
+}
+.nav.navbar-nav .dropdown-menu.login .login-form input
+{
+	margin: 10px 0;
+}
+.nav.navbar-nav .dropdown-menu.login .login-form input[type="submit"]
+{
+	background: #AB0000;
+	color: white;
+	border:none;
+}
+.nav.navbar-nav .dropdown-menu.login .login-form h4
+{
+	text-align: center;
+	color: #AB0000;
+	font-weight: bold;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #AB0000;
+	margin-bottom: 30px;
+}
+
+.subir
+{
+	color:white;
+	background: #C30000;
+	display: block;
+
+	right: 20px;
+	bottom: 40px;
+	position: fixed;
+	border-radius: 50%;
+	z-index: 5;
+	cursor: pointer;
+	outline:none;
+	transition: all .8s;
+	font-size: 2em;
+	padding: 15px;
+	opacity: 0;
+}
+.subir:hover {
+	background-color: tomato;
+}
+.girar
+{
+	opacity: 1;
+	transform: rotateX(360deg);
+}
+
+
+
+
+
+
+
+.images
+{
+	height: 280px;
+	max-height: 45%;
+	border-radius: 50% !important;
+}
+
+.container-table
+{
+	overflow-x:auto;
+	font-size: 1em;
+	background-color: white;
+	height: 280px;
+	max-height: 45%;
+}
+.container-table .table.horario
+{
+	height: 225px;
+	font-size: .8em;
+}
+.container-table .table caption
+{
+	text-align: center;
+	font-size: 1.2em;
+	color: #920000;
+}
+
+
+
+
+/*******************   PRINCIPAL   ***********************/
+section.principal .banner
+{
+
+	width: 100%;
+	height: 30vh;
+	margin:0;
+	padding: 0;
+	position: absolute;
+	top: -300px;
+	display: flex;
+	align-items: center;
+	opacity: 0;
+}
+section.principal .banner h1
+{
+	color: #fafafa;
+	font-weight: bold;
+	font-family: 'Acme', sans-serif;
+	font-size: 6em;
+	margin: 0 auto;
+	text-shadow: 4px 4px #111;
+
+}
+section.principal .banner img
+{
+	display: inline-block;
+	width: 350px;
+	height: 60vh;
+	position: absolute;
+
+}
+
+
+
+/******************   IMAGENES   ***************/
+section.imagenes
+{
+	background: #fafafa;
+	display:flex;
+	align-content: center;
+	justify-content: center;
+}
+section.imagenes .carousel-inner .item {
+	height: 80vh;
+}
+section.imagenes .carousel-inner .item img {
+	width: 100vw;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*******************   NOTICIAS   ************************/
+section.noticias
+{
+	background: #fafafa;
+
+	background-size: cover;
+
+}
+section.noticias .noticia
+{
+	cursor:pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	transition: .5s linear all;
+}
+section.noticias .noticia .imagen
+{
+	background-color: rgba(255,255,255,.6);
+	padding: 5px;
+	background-color: #111;
+	outline: 2px solid white;
+	overflow: hidden;
+}
+section.noticias p
+{
+	color:#111;
+	font-size: .8em;
+}
+section.noticias .noticia .imagen img
+{
+	width: 100%;
+	height: 150px;
+	display: block;
+	transition: all .2s;
+}
+section.noticias .noticia:hover {
+	box-shadow: 100px 0 rgba(255, 255, 255, .2);
+}
+section.noticias .noticia:hover .imagen img
+{
+	transform: scale(1.2) rotate(-5deg);
+	filter:sepia(1);
+}
+section.noticias .noticia:hover p
+{
+	color: #FFD899;
+}
+section.noticias .noticia h3
+{
+	color: tomato;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: lighter;
+}
+section.noticias .noticia:hover h3
+{
+	color:#ffd860;
+}
+section.noticias .noticia .fecha
+{
+	font-size: .8em;
+	color: #aaa;
+}
+
+section.noticias .ver-mas h3
+{
+	cursor: pointer;
+	font-size: 3em;
+	text-align: center;
+	color:gray;
+	transition: all .6s;
+}
+section.noticias .ver-mas h3:hover
+{
+	color:tomato;
+	font-size: 3.5em;
+}
+
+
+
+
+
+/********************   INSCRIPCIONES   **********************/
+section.inscripciones
+{
+	/*background: url(/images/fondo3.jpg) no-repeat center center fixed;*/
+	background-color: #fafafa;
+	background-size: cover;
+}
+
+section.inscripciones h3
+{
+	color:#333;
+}
+
+section.inscripciones .direccion
+{
+	color: tomato;
+}
+section.inscripciones .mapa {
+	padding: 2px;
+	border: 2px solid grey;
+}
+
+
+
+
+
+/****************   HORARIOS   ***********/
+section.horarios
+{
+	background: url(/images/fondo3.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+section.horarios h3
+{
+	color:white;
+	text-shadow: 1px 1px steelblue;
+}
+
+section.horarios h2 {
+	color: white;
+	border-bottom: 1px solid grey;
+}
+
+section.horarios img
+{
+	height: 200px;
+	width: 250px;	
+	border: 4px solid white;
+}
+
+section.horarios #img2
+{
+	position: absolute;
+	z-index: 2;
+	left: 140px;
+
+}
+
+section.horarios #img1
+{
+	transform: rotate(-15deg);
+	margin-right: 20px;
+}
+section.horarios #img3
+{
+	transform: rotate(15deg);
+	margin-left: 20px;
+}
+
+
+
+
+
+/****************************   MEDIA QUIERIES   ***********************/
+
+@media only screen and (max-width: 1200px)
+{
+	section.principal .banner h1
+	{
+		font-size: 4em;
+	}
+	section.noticias h2
+	{
+		margin-bottom: 100px;
+	}
+}
+
+
+@media only screen and (max-width: 991px)
+{
+	footer .principio .logo
+	{
+		display: none;
+	}
+	section.principal .banner img
+	{
+		display: none;
+	}
+	section.principal .banner h1
+	{
+		display: block;
+		
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	.navbar.navbar-default
+	{
+		opacity: 1;
+	}
+	.principal .banner h1
+	{
+		font-size: 3em;
+	}
+	.container-table .table.horario
+	{
+		font-size: .8em;
+	}
+	.nav.navbar-nav .dropdown-menu.login .login-form h4
+	{
+		display: none;
+	}
+	.nav.navbar-nav .dropdown-menu.login .login-form input
+	{
+		height: 25px;
+		margin-top: 0;
+	}
+	.nav.navbar-nav .dropdown-menu.login .login-form input[type="submit"]
+	{
+		height: 30px;
+	}
+	.nav.navbar-nav .dropdown-menu.login
+	{
+		background: white;
+
+	}
+	section.noticias .noticia img
+	{
+		height: 200px;
+	}
+	section.noticias .noticia
+	{
+		margin-top: 50px;
+	}
+	section.noticias h2
+	{
+		margin-bottom: 10px;
+	}
+
+
+	footer .redes
+	{
+		padding-top: 15px;
+	}
+	footer .redes ul
+	{
+		margin: 0 auto;
+	}
+	footer .redes a {
+	padding: 20px;
+}
+footer .redes a span {
+	color: white;
+	font-size: 2em;
+}
+
+	section.horarios img
+	{
+		height: 100px;
+		width: 150px;
+		margin: 0 20px;
+		position: relative;
+		
+	}
+
+	section.horarios #img2
+	{
+		top: 40px;
+	}
+	section.horarios .imagenes-horario
+	{
+		padding: 20px 0;
+	}
+
+	section.imagenes .carousel-inner .item {
+		max-height: 40vh;
+	}
+}
+
+

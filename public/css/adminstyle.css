@@ -1,0 +1,296 @@
+body
+{
+	padding: 0;
+	background: #eee;
+}
+.admin
+{
+	background: white;
+	background-size: cover;
+	min-height: 97vh;
+	box-shadow: 2px 3px 3px #222;
+	margin: 10px 0;
+}
+
+
+
+
+/********************navbar**********************/
+.navbar.navbar-default .nav.navbar-nav li a {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.navbar.navbar-default .registrar ul
+{
+	background:#C30000;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.navbar.navbar-default .registrar ul li
+{
+	list-style: none;
+	width: 100%;
+	display: block;
+}
+.navbar.navbar-default .registrar ul li a
+{
+	color:white;
+	font-size: 1.1em;
+	margin: 0;
+	padding: 10px;
+	text-decoration: none;
+	display: inline-block;
+
+}
+
+.nav.navbar-nav li a {
+	transition: .2s linear all;
+}
+
+/*************panel admin***************/
+
+.admin .marco
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.admin .marco h2
+{
+	margin-bottom: 50px;
+	font-size: 3em;
+	font-family: 'roboto-condensed', sans-serif;
+	color: #C30000;
+	border-bottom: 1px solid #C30000;
+	
+}
+
+.admin .marco .noticias .imagen
+{
+	outline: 4px solid #E9D460;
+}
+.admin .marco .noticias .imagen img
+{
+	width: 100%;
+
+	min-height: 90px;
+	display: block;
+}
+.admin .marco .noticias p
+{
+	font-size: 1em;
+	font-style: italic;
+}
+.admin .marco .nueva span
+{
+	font-size: 1.2em;
+	vertical-align: middle;
+
+}
+button.nuevo-alumno, button.nueva-noticia {
+	outline:none;
+	border:none;
+	margin-bottom: 10px;
+}
+
+
+.nueva a:active
+{
+	padding: 12px;
+}
+
+.admin .marco .fila-noticia
+{
+	padding: 5px 0;
+	margin: 10px 0;
+	
+}
+
+
+.admin .marco .fila-noticia
+{
+	/*background: linear-gradient(seagreen, #333);*/
+	/*border-top:4px solid #00B16A;*/
+	border: 1px solid lightgrey;
+	padding: 10px 0;
+	color:grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .3s linear all;
+}
+.admin .marco .fila-noticia:hover{
+	box-shadow: 3px 3px grey;
+	padding: 1%;
+}
+
+
+/****************   ALUMNOS   **************************/
+
+.admin .marco .table-alumnos td, .admin .marco .table-alumnos th{
+	vertical-align: middle;
+}
+.admin .marco .alumnos {
+	margin-top : 30px;
+}
+/*************************botones********************/
+
+.admin .marco .botones {
+	padding: 10px;
+	display: flex;
+}
+
+.admin .marco .botones .edit
+{
+	background-color: steelblue;
+}
+.admin .marco .botones .remove
+{
+	background-color: tomato;
+}
+.admin .marco .botones .pay
+{
+	background-color: seagreen;
+}
+
+.admin .marco .botones .edit, 
+.admin .marco .botones .remove,
+.admin .marco .botones .pay
+{
+	padding: 10px;
+	margin: 0 5px;
+	border-radius: 50%;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2em;
+	cursor: pointer;
+	max-width: 40px;
+}
+
+#crear-noticia .titulo-nueva-noticia,
+#crear-alumno .titulo-nuevo-alumno,
+#crear-pago .titulo-nuevo-pago
+{
+	color:tomato;
+
+}
+
+#crear-noticia input,
+#crear-alumno input,
+.select-categoria, 
+.select-sangre
+{
+	margin-bottom: 10px;
+	color: #999;
+}
+
+#crear-noticia textarea
+{
+	min-height: 300px;
+	resize: vertical;
+}
+#crear-alumno textarea
+{
+	resize: none;
+	height: 100px;
+}
+
+#crear-noticia input[type="submit"],
+#crear-alumno input[type="submit"],
+#crear-pago input[type="submit"],
+.cancelar
+{
+	height: 15%;
+	margin: 0 5px;
+	background: #c30000;
+	color: white;
+	width: auto;
+	display: inline-block;
+	height: 35px;
+	border: none;
+}
+
+#crear-alumno input, #crear-alumno select, #crear-alumno textarea,
+#crear-noticia input, #crear-noticia select, #crear-noticia textarea
+{
+	color:#111;
+}
+
+.cancelar, .cancelar:hover
+{
+	background: steelblue;
+	color: white;
+}
+
+
+.alert.alert-success
+{
+	z-index: 5;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:768px)
+{
+	.navbar.navbar-default
+	{
+		height:100vh;
+		width: 23%;
+		box-shadow: 2px 2px 2px black;
+		left: -23%;
+	}
+	.navbar.navbar-default ul li
+	{
+		width: 100%;
+	}
+	.navbar.navbar-default .navbar-header {
+		background: url(../images/fondo2.jpg)no-repeat center center;
+		background-size: cover;
+		height: 199px;
+	}
+	.navbar.navbar-default .registrar .dropdown-menu li a
+	{
+		width: 100%;
+	}
+	.admin, .admin .marco
+	{
+		padding-top: 0;
+	}
+
+}
+
+
+@media only screen and (max-width: 768px)
+{
+	.admin .marco {
+		margin-top:30px;
+	}
+	.navbar.navbar-default .nav.navbar-nav li a {
+		display: flex;
+		justify-content: flex-start;
+	}
+	.admin .marco .botones .edit, .admin .marco .botones .remove, .admin .marco .botones .pay
+	{
+		text-align: center;
+		margin-top: 10px;
+	}
+	.admin .marco .fila-noticia {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.admin .marco .botones
+	{
+		display: flex;
+	}
+	.nueva, .nueva a
+	{
+		width: auto;
+		text-align: center;
+	}
+}

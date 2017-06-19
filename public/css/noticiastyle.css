@@ -1,0 +1,48 @@
+.modal
+{
+	font-family: helvetica, sans-serif;
+}
+.modal .titulo
+{
+	color: tomato;
+	font-size: 2em;
+	font-family: 'Open Sans', ;
+}
+.modal .fecha
+{
+	font-size: .8em;
+	color: #aaa;
+}
+.modal .imagen
+{
+	background-color: rgba(255,255,255,.6);
+	padding: 5px;
+	background-color: #111;
+	outline: 2px solid white;
+}
+.modal .imagen img
+{
+	width: 100%;
+	
+	display: block;
+}
+
+.modal .cuerpo
+{
+	padding: 10px;
+	font-size: 1.1em;
+}
+
+.modal .close
+{
+	color: black;
+}
+
+
+@media only screen and (max-width: 768px)
+{
+	.modal .cuerpo
+	{
+		font-size: .9em;
+	}
+}

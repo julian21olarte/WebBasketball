@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link href="/images/favicon.png" rel="icon" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/noticiasstyle.css">
+	<link rel="stylesheet" type="text/css" href="/css/noticiastyle.css">
+	<link href="/fonts/fonts.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+	<title>Noticias</title>
+
+</head>
+<body>
+
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<!--<a href="#" title="" class="navbar-titulo">Cañoneros</a>-->
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button id="navbar-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					<span class="icon-menu"></span>
+				</button>
+				<a class="navbar-brand">CañonerosCucuta</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="nav navbar-nav">
+					<li><a href="/" id="inicio">INICIO</a></li>
+					<li><a href="/Noticias" id="noticias">NOTICIAS</a></li>
+					<li><a href="/Inscripciones" id="inscripciones">INSCRIPCIONES</a></li>
+					<li><a href="/Contacto" id="contacto">CONTACTO</a></li>	
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li id="login-li" class="dropdown">
+						<a href="#" id="login" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
+
+						<div class="dropdown-menu login">
+							<form class="login-form" action="/login-submit" method="POST" accept-charset="utf-8">
+								<h4>ADMINISTRADOR</h4>
+								<input class="form-control" type="text" name="nombre" placeholder="Nombre" required="" />
+								<input class="form-control" type="password" name="contraseña" placeholder="Constraseña" required="" />
+								<input class="form-control" type="submit" value="Entrar" name="enviar"/>
+								<p id="incorrecto" style="color:red; display: none; margin-top: 5px;">Usuario o Contraseña invalidos!</p>
+							</form>
+						</div>
+					</li>	
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<section class="noticias">
+		<div class="container contenido">
+
+			<div class="row titulo">
+				<div class="col-xs-12">
+					<h2>NOTICIAS</h2>
+				</div>
+			</div>
+
+
+				<div class="row final">
+					<div class="col-xs-6 col-xs-offset-3 col-sm-2 col-sm-offset-5">
+						<h3 class="ver-mas">Ver mas...</h3>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</section>
+
+
+
+
+	<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+	<script  src="js/jquery.backstretch.min.js" type="text/javascript"></script>
+	<script  src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/principal2.js" type="text/javascript"></script>
+	<script src="js/leernoticias.js" type="text/javascript"></script>
+</body>
+</html>
