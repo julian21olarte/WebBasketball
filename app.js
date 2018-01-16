@@ -193,7 +193,7 @@ app.post('/mail', function(req, res){
 	    service: 'Gmail',
 	    auth: {
 	        user: 'julian21olarte@gmail.com',
-	        pass: 'explosiondegalaxias',
+	        pass: '',
 	    },
 	});
 
